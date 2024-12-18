@@ -3,7 +3,7 @@ import { useConversations } from "../context/ConversationsProvider";
 import { ListGroup, ListGroupItem } from "react-bootstrap";
 
 export default function Conversations() {
-  const { conversations } = useConversations();
+  const { conversations, selectConversationIndex } = useConversations();
 
   return (
     <ListGroup variant="flush">
