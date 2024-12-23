@@ -12,7 +12,7 @@ export default function Conversations() {
           key={index}
           action
           active={conversation.selected}
-          onClick={() => selectedConversationIndex(index)}
+          onClick={() => selectConversationIndex(index)}
         >
           {conversation.recipients
             .map((recipient) => recipient.name)
